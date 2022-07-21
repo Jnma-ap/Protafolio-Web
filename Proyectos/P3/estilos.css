@@ -1,13 +1,13 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 /* Variables
 -------------------------------------------------------------- */
 /* Body and Notice styling
 -------------------------------------------------------------- */
 body {
   color: #b6b5ca;
-  font-family: 'Righteous', cursive;
-  margin: 0;
+  font-family: "Righteous", cursive;
+  margin: 0px;
   text-align: center;
   background-color: #222738;
 }
@@ -20,7 +20,7 @@ h5 {
 /* Tic-tac-toe game
 -------------------------------------------------------------- */
 .tic-tac-toe {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   height: 300px;
   overflow: hidden;
   margin: 50px auto 30px auto;
@@ -47,7 +47,8 @@ h5 {
 .tic-tac-toe input[type="radio"].player-2 + label:after {
   content: "";
 }
-.tic-tac-toe input[type="radio"].player-1:checked + label:after, .tic-tac-toe input[type="radio"].player-2:checked + label:after {
+.tic-tac-toe input[type="radio"].player-1:checked + label:after,
+.tic-tac-toe input[type="radio"].player-2:checked + label:after {
   opacity: 1;
 }
 .tic-tac-toe input[type="radio"].player-1:checked + label {
@@ -142,54 +143,215 @@ h5 {
     top: 300px;
   }
 }
-.tic-tac-toe input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:checked ~
-input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:checked ~
-input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:checked ~ .end {
+.tic-tac-toe
+  input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ .end {
   display: block;
 }
-.tic-tac-toe input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:checked ~
-input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:checked ~
-input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:checked ~ .end > h3:before {
+.tic-tac-toe
+  input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ input[type="radio"]:checked
+  ~ .end
+  > h3:before {
   content: "It is a tie!";
 }
-.tic-tac-toe .player-1.first-column:checked ~ .player-1.first-column:checked ~ .player-1.first-column:checked ~ .end,
-.tic-tac-toe .player-1.second-column:checked ~ .player-1.second-column:checked ~ .player-1.second-column:checked ~ .end,
-.tic-tac-toe .player-1.third-column:checked ~ .player-1.third-column:checked ~ .player-1.third-column:checked ~ .end,
-.tic-tac-toe .player-1.first-row:checked ~ .player-1.first-row:checked ~ .player-1.first-row:checked ~ .end,
-.tic-tac-toe .player-1.second-row:checked ~ .player-1.second-row:checked ~ .player-1.second-row:checked ~ .end,
-.tic-tac-toe .player-1.third-row:checked ~ .player-1.third-row:checked ~ .player-1.third-row:checked ~ .end,
-.tic-tac-toe .player-1.first-diagonal:checked ~ .player-1.first-diagonal:checked ~ .player-1.first-diagonal:checked ~ .end,
-.tic-tac-toe .player-1.second-diagonal:checked ~ .player-1.second-diagonal:checked ~ .player-1.second-diagonal:checked ~ .end {
+.tic-tac-toe
+  .player-1.first-column:checked
+  ~ .player-1.first-column:checked
+  ~ .player-1.first-column:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.second-column:checked
+  ~ .player-1.second-column:checked
+  ~ .player-1.second-column:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.third-column:checked
+  ~ .player-1.third-column:checked
+  ~ .player-1.third-column:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.first-row:checked
+  ~ .player-1.first-row:checked
+  ~ .player-1.first-row:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.second-row:checked
+  ~ .player-1.second-row:checked
+  ~ .player-1.second-row:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.third-row:checked
+  ~ .player-1.third-row:checked
+  ~ .player-1.third-row:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.first-diagonal:checked
+  ~ .player-1.first-diagonal:checked
+  ~ .player-1.first-diagonal:checked
+  ~ .end,
+.tic-tac-toe
+  .player-1.second-diagonal:checked
+  ~ .player-1.second-diagonal:checked
+  ~ .player-1.second-diagonal:checked
+  ~ .end {
   display: block;
 }
-.tic-tac-toe .player-1.first-column:checked ~ .player-1.first-column:checked ~ .player-1.first-column:checked ~ .end h3:before,
-.tic-tac-toe .player-1.second-column:checked ~ .player-1.second-column:checked ~ .player-1.second-column:checked ~ .end h3:before,
-.tic-tac-toe .player-1.third-column:checked ~ .player-1.third-column:checked ~ .player-1.third-column:checked ~ .end h3:before,
-.tic-tac-toe .player-1.first-row:checked ~ .player-1.first-row:checked ~ .player-1.first-row:checked ~ .end h3:before,
-.tic-tac-toe .player-1.second-row:checked ~ .player-1.second-row:checked ~ .player-1.second-row:checked ~ .end h3:before,
-.tic-tac-toe .player-1.third-row:checked ~ .player-1.third-row:checked ~ .player-1.third-row:checked ~ .end h3:before,
-.tic-tac-toe .player-1.first-diagonal:checked ~ .player-1.first-diagonal:checked ~ .player-1.first-diagonal:checked ~ .end h3:before,
-.tic-tac-toe .player-1.second-diagonal:checked ~ .player-1.second-diagonal:checked ~ .player-1.second-diagonal:checked ~ .end h3:before {
+.tic-tac-toe
+  .player-1.first-column:checked
+  ~ .player-1.first-column:checked
+  ~ .player-1.first-column:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.second-column:checked
+  ~ .player-1.second-column:checked
+  ~ .player-1.second-column:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.third-column:checked
+  ~ .player-1.third-column:checked
+  ~ .player-1.third-column:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.first-row:checked
+  ~ .player-1.first-row:checked
+  ~ .player-1.first-row:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.second-row:checked
+  ~ .player-1.second-row:checked
+  ~ .player-1.second-row:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.third-row:checked
+  ~ .player-1.third-row:checked
+  ~ .player-1.third-row:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.first-diagonal:checked
+  ~ .player-1.first-diagonal:checked
+  ~ .player-1.first-diagonal:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-1.second-diagonal:checked
+  ~ .player-1.second-diagonal:checked
+  ~ .player-1.second-diagonal:checked
+  ~ .end
+  h3:before {
   content: "Player 1 wins!" !important;
 }
-.tic-tac-toe .player-2.first-column:checked ~ .player-2.first-column:checked ~ .player-2.first-column:checked ~ .end,
-.tic-tac-toe .player-2.second-column:checked ~ .player-2.second-column:checked ~ .player-2.second-column:checked ~ .end,
-.tic-tac-toe .player-2.third-column:checked ~ .player-2.third-column:checked ~ .player-2.third-column:checked ~ .end,
-.tic-tac-toe .player-2.first-row:checked ~ .player-2.first-row:checked ~ .player-2.first-row:checked ~ .end,
-.tic-tac-toe .player-2.second-row:checked ~ .player-2.second-row:checked ~ .player-2.second-row:checked ~ .end,
-.tic-tac-toe .player-2.third-row:checked ~ .player-2.third-row:checked ~ .player-2.third-row:checked ~ .end,
-.tic-tac-toe .player-2.first-diagonal:checked ~ .player-2.first-diagonal:checked ~ .player-2.first-diagonal:checked ~ .end,
-.tic-tac-toe .player-2.second-diagonal:checked ~ .player-2.second-diagonal:checked ~ .player-2.second-diagonal:checked ~ .end {
+.tic-tac-toe
+  .player-2.first-column:checked
+  ~ .player-2.first-column:checked
+  ~ .player-2.first-column:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.second-column:checked
+  ~ .player-2.second-column:checked
+  ~ .player-2.second-column:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.third-column:checked
+  ~ .player-2.third-column:checked
+  ~ .player-2.third-column:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.first-row:checked
+  ~ .player-2.first-row:checked
+  ~ .player-2.first-row:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.second-row:checked
+  ~ .player-2.second-row:checked
+  ~ .player-2.second-row:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.third-row:checked
+  ~ .player-2.third-row:checked
+  ~ .player-2.third-row:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.first-diagonal:checked
+  ~ .player-2.first-diagonal:checked
+  ~ .player-2.first-diagonal:checked
+  ~ .end,
+.tic-tac-toe
+  .player-2.second-diagonal:checked
+  ~ .player-2.second-diagonal:checked
+  ~ .player-2.second-diagonal:checked
+  ~ .end {
   display: block;
 }
-.tic-tac-toe .player-2.first-column:checked ~ .player-2.first-column:checked ~ .player-2.first-column:checked ~ .end h3:before,
-.tic-tac-toe .player-2.second-column:checked ~ .player-2.second-column:checked ~ .player-2.second-column:checked ~ .end h3:before,
-.tic-tac-toe .player-2.third-column:checked ~ .player-2.third-column:checked ~ .player-2.third-column:checked ~ .end h3:before,
-.tic-tac-toe .player-2.first-row:checked ~ .player-2.first-row:checked ~ .player-2.first-row:checked ~ .end h3:before,
-.tic-tac-toe .player-2.second-row:checked ~ .player-2.second-row:checked ~ .player-2.second-row:checked ~ .end h3:before,
-.tic-tac-toe .player-2.third-row:checked ~ .player-2.third-row:checked ~ .player-2.third-row:checked ~ .end h3:before,
-.tic-tac-toe .player-2.first-diagonal:checked ~ .player-2.first-diagonal:checked ~ .player-2.first-diagonal:checked ~ .end h3:before,
-.tic-tac-toe .player-2.second-diagonal:checked ~ .player-2.second-diagonal:checked ~ .player-2.second-diagonal:checked ~ .end h3:before {
+.tic-tac-toe
+  .player-2.first-column:checked
+  ~ .player-2.first-column:checked
+  ~ .player-2.first-column:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.second-column:checked
+  ~ .player-2.second-column:checked
+  ~ .player-2.second-column:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.third-column:checked
+  ~ .player-2.third-column:checked
+  ~ .player-2.third-column:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.first-row:checked
+  ~ .player-2.first-row:checked
+  ~ .player-2.first-row:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.second-row:checked
+  ~ .player-2.second-row:checked
+  ~ .player-2.second-row:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.third-row:checked
+  ~ .player-2.third-row:checked
+  ~ .player-2.third-row:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.first-diagonal:checked
+  ~ .player-2.first-diagonal:checked
+  ~ .player-2.first-diagonal:checked
+  ~ .end
+  h3:before,
+.tic-tac-toe
+  .player-2.second-diagonal:checked
+  ~ .player-2.second-diagonal:checked
+  ~ .player-2.second-diagonal:checked
+  ~ .end
+  h3:before {
   content: "Player 2 wins!" !important;
 }
 .tic-tac-toe label {
@@ -217,7 +379,7 @@ input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:
   background-color: #3d4250;
 }
 .tic-tac-toe label:hover:after {
-  opacity: .4;
+  opacity: 0.4;
 }
 .tic-tac-toe label:after {
   left: 0;
@@ -250,10 +412,8 @@ input[type="radio"]:checked ~ input[type="radio"]:checked ~ input[type="radio"]:
   top: 5px;
   text-align: center;
   z-index: 11;
-
 }
-.center{
-
+.center {
   margin: 0px;
 }
 @media (min-width: 450px) {
