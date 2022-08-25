@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "codigo_python",
+			"path": "..\\..\\codigo_python"
+		},
+		{
+			"name": "codigo_HTML",
+			"path": ".."
+		},
+		{
+			"name": "codigo_JavaScript",
+			"path": "..\\..\\codigo_JavaScript"
+		},
+		{
+			"name": "Juan_ma",
+			"path": "..\\..\\Juan_ma"
+		},
+		{
+			"name": "Monteria",
+			"path": "..\\..\\Juan_ma\\Programación\\Monteria"
+		}
+	]
+}
